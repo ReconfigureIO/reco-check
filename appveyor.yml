@@ -1,0 +1,26 @@
+branches:
+  # whitelist
+  only:
+    - master
+
+build: off
+
+before_test:
+# http://help.appveyor.com/discussions/problems/6312-curl-command-not-found
+- set PATH=C:\Program Files\Git\mingw64\bin;%PATH%;%CD%\bins
+- set GOPATH=%CD%\gopath
+
+test_script:
+- reco-check examples/addition/main.go
+- reco-check examples/histogram/main.go
+- reco-check examples/histogram-array/main.go
+- reco-check examples/histogram-parallel/main.go
+- reco-check examples/memcopy/main.go
+- reco-check examples/memtest/main.go
+- reco-check examples/noop/main.go
+
+notifications:
+  - provider: Slack
+    channel: #status
+    incoming_webhook:
+      secure: LbTv30cQKAAQHOmq90O6hFm1mjFRvZljYwtx7V00jq/HadB/IWPTwFzWFUOZMR6heHHMBxzGRmN8kRmqK5qw/q230fHqkJ4qZ+wUsiXz7VU=
