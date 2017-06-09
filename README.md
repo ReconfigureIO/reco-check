@@ -26,7 +26,11 @@ designs. They can be checked like so:
 
 ## Further Reading
 
-See our [online documentation](http://docs.reconfigure.io/)
+See our [online documentation](http://docs.reconfigure.io/).
+
+The tutorials described will follow roughly the same guideline, but
+you can use the examples included here. Where you would do `reco
+build`, you can instead run `reco-check main.go`.
 
 ## Licensing
 
