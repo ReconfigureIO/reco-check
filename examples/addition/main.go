@@ -24,7 +24,7 @@ func Top(
 	// Disable memory reads
 	go axiprotocol.ReadDisable(memReadAddr, memReadData)
 
-	val := a + c
+	val := a + b
 
 	aximemory.WriteUInt32(
 		memWriteAddr, memWriteData, memWriteResp, false, addr, val)
