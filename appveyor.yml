@@ -18,6 +18,7 @@ test_script:
 - reco-check examples/memcopy/main.go
 - reco-check examples/memtest/main.go
 - reco-check examples/noop/main.go
+- reco-check examples/popcount/main.go
 
 notifications:
   - provider: Slack
