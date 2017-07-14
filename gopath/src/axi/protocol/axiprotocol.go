@@ -13,10 +13,15 @@
 // corresponds to the largest Go primitive data types.
 //
 
+/*
+
+Package protocol provides low level primitives for working the AXI4 protocol
+
+*/
 package protocol
 
 //
-// Specifies AXI memory address channel fields.
+// Type Addr specifies AXI memory address channel fields.
 //
 type Addr struct {
 	Id     bool
@@ -33,7 +38,7 @@ type Addr struct {
 }
 
 //
-// Specifies AXI memory read data channel fields.
+// Type ReadData specifies AXI memory read data channel fields.
 //
 type ReadData struct {
 	Id   bool
@@ -44,7 +49,7 @@ type ReadData struct {
 }
 
 //
-// Specifies AXI memory write data channel fields.
+// Type WriteData specifies AXI memory write data channel fields.
 //
 type WriteData struct {
 	Data uint64
@@ -54,7 +59,7 @@ type WriteData struct {
 }
 
 //
-// Specifies AXI memory write response channel fields.
+// Type WriteResp specifies AXI memory write response channel fields.
 //
 type WriteResp struct {
 	Id   bool
@@ -63,8 +68,8 @@ type WriteResp struct {
 }
 
 //
-// Goroutine to disable AXI bus write transactions. Should be run once for each
-// unused AXI write interface.
+// WriteDisable will disable AXI bus write transactions. Should be run once for each
+// unused AXI write interface. This will block the calling goroutine.
 //
 func WriteDisable(
 	clientAddr chan<- Addr,
@@ -79,8 +84,8 @@ func WriteDisable(
 }
 
 //
-// Goroutine to disable AXI bus read transactions. Should be run once for
-// each unused AXI read interface.
+// ReadDisable will disable AXI bus read transactions. Should be run once for
+// each unused AXI read interface. This will block the calling goroutine.
 //
 func ReadDisable(
 	clientAddr chan<- Addr,
