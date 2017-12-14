@@ -4,10 +4,10 @@ import (
 	"teak"
 
 	// Import support for AXI memory access
-	aximemory "axi/memory"
-	axiprotocol "axi/protocol"
+	aximemory "github.com/ReconfigureIO/sdaccel/axi/memory"
+	axiprotocol "github.com/ReconfigureIO/sdaccel/axi/protocol"
 	// Import the entire framework (including bundled verilog)
-	_ "sdaccel"
+	_ "github.com/ReconfigureIO/sdaccel"
 )
 
 // This is a kernel for showcasing the builtin Smash functionality.

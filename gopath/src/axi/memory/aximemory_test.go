@@ -1,7 +1,7 @@
 package memory
 
 import (
-	"axi/protocol"
+	"github.com/ReconfigureIO/sdaccel/axi/protocol"
 	"testing"
 	"testing/quick"
 )
