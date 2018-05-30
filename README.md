@@ -1,3 +1,9 @@
+# This project has moved; this repository is no longer maintained.
+
+It is no longer maintained here, it is now maintained as part of our internal compiler infrastructure.
+
+---
+
 # reco-check
 
 A program to validate Go files for compatibility with Reconfigure.io's Go compiler.
