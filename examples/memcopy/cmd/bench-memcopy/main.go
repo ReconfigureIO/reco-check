@@ -4,8 +4,8 @@ import (
 	"crypto/rand"
 	"encoding/binary"
 	"fmt"
+	"github.com/ReconfigureIO/sdaccel/xcl"
 	"testing"
-	"xcl"
 
 	"ReconfigureIO/reco-sdaccel/benchmarks"
 )

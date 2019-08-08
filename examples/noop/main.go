@@ -2,9 +2,9 @@ package main
 
 import (
 	// Import the entire framework (including bundled verilog)
-	_ "sdaccel"
+	_ "github.com/ReconfigureIO/sdaccel"
 	// Use the new AXI protocol package
-	axiprotocol "axi/protocol"
+	axiprotocol "github.com/ReconfigureIO/sdaccel/axi/protocol"
 )
 
 // Magic identifier for exporting

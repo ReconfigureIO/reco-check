@@ -2,9 +2,9 @@ package shared
 
 import (
 	"encoding/binary"
+	"github.com/ReconfigureIO/sdaccel/xcl"
 	"math/rand"
 	"testing"
-	"xcl"
 
 	"ReconfigureIO/reco-sdaccel/benchmarks"
 )

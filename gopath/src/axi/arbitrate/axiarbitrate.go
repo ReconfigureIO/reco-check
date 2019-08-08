@@ -19,7 +19,7 @@ Package arbitrate provides reusable arbitrators for AXI transations.
 package arbitrate
 
 import (
-	"axi/protocol"
+	"github.com/ReconfigureIO/sdaccel/axi/protocol"
 )
 
 //

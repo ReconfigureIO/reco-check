@@ -14,8 +14,8 @@
 package memory
 
 import (
-	aximemory "axi/memory"
-	axiprotocol "axi/protocol"
+	aximemory "github.com/ReconfigureIO/sdaccel/axi/memory"
+	axiprotocol "github.com/ReconfigureIO/sdaccel/axi/protocol"
 )
 
 // Goroutine to disable memory bus read transactions. Should only be run
